@@ -1,0 +1,201 @@
+/*COLOR PALETTE
+Blue -  21b0fe
+Yellow - fed700
+Pink - #fe218b
+*/
+
+/*GLOBAL STYLES*/
+html {
+    box-sizing: border-box;
+}
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-color: white;
+    margin-left: 2.5em;
+    margin-right: 1.5em;
+    padding-left: 25%;
+    padding-right: 8%;
+    color: black;
+    font-family: 'Merriweather', serif; 
+    line-height: 150%;
+    font-size: 1em;
+}
+h1 {
+    color: #21b0fe;
+    font-family: 'Karla', 'sans-serif';
+    text-shadow:  #fed700 -3px 3px, #fe218b -6px 6px;
+    font-size: 3.0em;
+    }
+h2 {
+    font-family: 'Karla', sans-serif;
+    font-size: 2.3em;
+    line-height: 1.3;
+    color: #fe218b;
+}
+h3 {
+    font-size: 1.3em;
+}
+h4 {
+    font-size: 1em;
+}
+h5 {
+    font-size: .75em;
+}
+h6 {
+    font-size: .5em;
+}
+*{
+    color: black;
+}
+
+/*Navigation Menu*/
+   
+  .nav {
+    font-family: 'Karla', 'sans-serif';
+    font-size: 1.5em;
+    line-height: 1.5;
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  .nav a {
+    display: block;
+  }
+  .nav a:hover {background-color: yellow;}
+  
+  .Darby:hover .nav {display: block;}
+  
+/*Resume*/
+
+/*Special Header*/
+.Darby{
+    position: fixed;
+    top: 0;
+    left: 3%;
+    width: 100%;
+  }
+
+/*Profile*/
+
+/*Projects*/
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #21b0fe;
+  }
+.flex > div {
+    background-color: white;
+    width: 45%;
+    margin: 1em;
+    text-align: left;
+    padding: 5%
+  }
+#right {
+    max-width: 100%;
+    max-height: 70%;
+}
+#left {
+    max-width: 100%;
+}
+.project{
+    font-size: .8em;
+    display: grid;
+}
+/*Work Experience*/
+.experience{
+    padding: 2%;
+}
+.JR {
+    font-size: 1em;
+    font-weight: bold;
+}
+.job{
+    font-weight: bolder;
+}
+.date{
+    font-style: italic;
+    font-weight: bold;
+}
+.link {
+    color:#fe218b;
+    font-size: 1em;
+}
+
+/*Footer*/
+footer{
+    background: black;
+    color: white;
+    font-family: 'Karla','sans-serif';
+    font-size: 1em;
+}
+footer a:hover {
+    background: #fed700;
+    color: black;
+}
+.btn{
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    background-color: black;
+}
+.socials li{
+    display: inline-block;
+    padding-bottom: .5em;
+    justify-content: space-between;
+    padding-right:.85em;
+}
+#Touch {
+    color: white;
+    font-size: larger;
+    font-family: 'Karla', 'sans-serif';
+}
+
+/*RESPONSIVE*/
+
+  @media screen and (max-width: 1153px) {
+    h1 {
+      font-size: 3em;
+      position: static;
+      padding-bottom: 3%;
+    }
+    .Darby {
+        position: static;
+        padding: 2%;
+        text-align: center;
+    }
+    h2 {
+      line-height: 1;
+      font-size: 1.7em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+    body{
+        margin: 5%;
+        padding: 2%;
+        font-size: .8em;
+    }
+    .flex {
+        display: grid;
+        align-content: center;
+        width: 100%;
+        margin: 2%;
+    }
+    .flex > div {
+        width: 90%;
+        align-content: center;
+    }
+    .nav {
+        width: 85%;
+        align-content: center;
+        background-color: white;
+        line-height: 2;
+    }
+  }
